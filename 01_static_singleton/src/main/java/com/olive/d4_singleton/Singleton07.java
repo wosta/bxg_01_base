@@ -1,6 +1,5 @@
 package com.olive.d4_singleton;
 
-import jdk.nashorn.api.scripting.ScriptUtils;
 
 /**
  * @author olive
@@ -10,7 +9,8 @@ import jdk.nashorn.api.scripting.ScriptUtils;
  */
 public enum Singleton07 {
     INSTANCE;
-    public void doSomeing() {
+
+    public static void doSomeing() {
         System.out.println("do something....");
     }
 }

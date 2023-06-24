@@ -1,7 +1,5 @@
 package com.olive.d3_static_code;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,15 +11,16 @@ import java.util.List;
  * @modified By
  */
 public class StaticTest3 {
-//    private static String[] nums = new String[13];
+    //    private static String[] nums = new String[13];
 //    private static String[] flowers = new String[4];
-    private static List<String> cards = new ArrayList<>();
+    private static final List<String> cards = new ArrayList<>();
+
     static {
-        String[] nums = {"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
+        String[] nums = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
         String[] flowers = {"♥", "♠", "♦", "♣"};
         for (String num : nums) {
             for (String flower : flowers) {
-                cards.add(flower+num);
+                cards.add(flower + num);
             }
         }
         cards.add("大王");

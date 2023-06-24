@@ -16,22 +16,22 @@ public class Test {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                Singleton07 instance = Singleton07.INSTANCE;
-                instance.doSomeing();
+                final Singleton07 instance = Singleton07.INSTANCE;
+                Singleton07.doSomeing();
             }
         }).start();
         new Thread(new Runnable() {
             @Override
             public void run() {
-                Singleton07 instance = Singleton07.INSTANCE;
-                instance.doSomeing();
+                final Singleton07 instance = Singleton07.INSTANCE;
+                Singleton07.doSomeing();
             }
         }).start();
         new Thread(new Runnable() {
             @Override
             public void run() {
-                Singleton07 instance = Singleton07.INSTANCE;
-                instance.doSomeing();
+                final Singleton07 instance = Singleton07.INSTANCE;
+                Singleton07.doSomeing();
             }
         }).start();
     }
