@@ -1,7 +1,6 @@
 package collection230611.test;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @description: Demo
@@ -34,14 +33,15 @@ public class Demo {
             要求2：该方法能养所有品种的狗，但是不能养猫
             要求3：该方法能养所有的动物，但是不能传递其他类型
          */
+        ArrayList<Animals> animals = new ArrayList<>();
         ArrayList<Cat> list = new ArrayList<>();
         ArrayList<LiHuaCat> liHuaCats = new ArrayList<>();
         ArrayList<TeddyDog> teddyDogs = new ArrayList<>();
 
-        keepPet(liHuaCats);
+        keepPet(animals);
     }
 
-    public static void keepPet(ArrayList<? extends Cat> list) {
+    public static void keepPet(ArrayList<? super Cat> list) {
 
     }
 }
